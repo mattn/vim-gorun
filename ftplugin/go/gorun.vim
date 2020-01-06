@@ -1,8 +1,3 @@
-if exists('s:loaded')
-  finish
-endif
-let s:loaded = 1
-
 function! s:gorun(...) abort
   let l:cmd = printf('go run %s', expand('%'))
   if !empty(a:000)
